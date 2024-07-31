@@ -1,0 +1,141 @@
+.find-games-wrapper {
+  .page-header {
+    min-height: 140px;
+    background-size: cover;
+  }
+}
+
+.filter-wrap {
+  margin-top: 30px;
+  width: 100%;
+  padding: 0 15px;
+  .upcoming-cards {
+    margin: 0;
+  }
+  .filter-inr {
+    @media screen and (min-width: 1367px) {
+      padding: 0 6.25rem;
+    }
+    @media screen and (max-width: 1366px) and (min-width: 1200px) {
+      padding: 0 3.75rem;
+    }
+    width: 100%;
+    justify-content: space-between;
+  }
+  .apply-filters {
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+    }
+  }
+  .filter-form-wrap {
+    @media screen and (max-width: 991px) {
+      gap: 20px !important;
+      .ant-space-item {
+        width: 47%;
+      }
+      .ant-slider {
+        width: 100% !important;
+        &-rail {
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+        @media screen and (max-width: 575px) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    @media screen and (max-width: 575px) {
+      gap: 0 !important;
+      .ant-space-item {
+        width: 100%;
+      }
+    }
+    .ant-slider-rail {
+      background-color: #3e3e3e;
+    }
+  }
+  label {
+    font-size: 0.875rem !important;
+    color: #b1b1c8 !important;
+  }
+  .ant-input,
+  .ant-input-search-button {
+    color: #b1b1c8;
+    background-color: transparent;
+    border-color: rgb(253 253 253 / 26%) !important;
+  }
+  .ant-input::placeholder {
+    color: #5b5b75;
+  }
+  .ant-input-search-button svg {
+    color: #b1b1c8;
+  }
+  .ant-select {
+    @media screen and (max-width: 991px) {
+      width: 100% !important;
+    }
+  }
+  .ant-select-selector {
+    .ant-select-selection-item {
+      color: #b1b1c8 !important;
+    }
+  }
+  .ant-select-selector {
+    color: #b1b1c8 !important;
+    background-color: transparent !important;
+    border-color: rgba(121, 121, 121, 0.2588235294) !important;
+  }
+  .ant-select-arrow {
+    color: #b1b1c8 !important;
+  }
+  .clear-filter {
+    font-size: 1rem;
+    min-width: 9.375rem;
+    line-height: 1.25rem;
+    height: 2.5rem;
+    color: #b1b1c8;
+    border: 1px solid #b1b1c8;
+  }
+  .ant-picker {
+    min-width: 12.5rem;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+    input,
+    input::placeholder,
+    svg {
+      color: #b1b1c8;
+    }
+    background: #171734 !important;
+    border-color: rgba(121, 121, 121, 0.2588235294) !important;
+  }
+}
+
+.ant-pagination {
+  margin-top: 30px;
+  .ant-pagination-item {
+    a {
+      color: #b1b1c8 !important;
+    }
+    &-active {
+      background-color: transparent;
+      a {
+        color: #ffb100 !important;
+      }
+    }
+  }
+  .ant-pagination-disabled {
+    button {
+      color: #b1b1c8 !important;
+    }
+  }
+  .anticon-right {
+    svg {
+      color: #b1b1c8;
+    }
+  }
+}
+.ant-pagination-prev {
+  button {
+    color: #b1b1c8;
+  }
+}

@@ -1,0 +1,293 @@
+html {
+  font-size: 16px;
+  @media screen and (min-width: 1800px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+$primary: var(--primary-color) !important;
+
+.w-100 {
+  width: 100%;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.mx-1300 {
+  max-width: 1300px;
+}
+
+.mx-900 {
+  max-width: 900px !important;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.container {
+  @media screen and (min-width: 1800px) {
+    max-width: 1600px;
+  }
+  @media screen and (max-width: 1799px) {
+    max-width: 1200px;
+  }
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.side-dropdown {
+  .ant-avatar {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.section-heading {
+  font-size: 2.25rem !important;
+  color: #fff !important;
+  margin-bottom: 25px !important;
+  margin-top: 0;
+  span {
+    color: $primary;
+  }
+}
+
+.secondary-heading {
+  font-size: 1.5rem !important;
+  color: #fff !important;
+  margin-bottom: 1.5625rem !important;
+  margin-top: 0;
+}
+
+.primary-btn {
+  font-size: 0.875rem !important;
+  border-radius: 3.125rem !important;
+  min-width: 8.125rem;
+  height: 2.5rem !important;
+  line-height: 1.5625rem;
+  @media screen and (min-width: 1920px) {
+    padding: 10px !important;
+  }
+}
+
+.sub-banner {
+  position: relative;
+  @media screen and (min-width: 576px) {
+    min-height: 350px;
+  }
+  background-position: right;
+  background-image: url(../../images/gaming-main.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  padding-top: 8.125rem;
+  @media screen and (max-width: 575px) {
+    padding-bottom: 60px;
+  }
+  h2,
+  .profile-text {
+    color: #fff;
+    position: relative;
+    font-size: 0.875rem;
+  }
+  h2 {
+    font-size: 1.875rem;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.link-navigate {
+  &:before {
+    content: "";
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+
+.my-game-card {
+  padding: 80px 0;
+  .my-game-head {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    h4 {
+      margin-bottom: 0 !important;
+    }
+  }
+  .edit-btn {
+    position: relative;
+    z-index: 2;
+  }
+  .upcoming-cards {
+    position: relative;
+    @media screen and (min-width: 768px) {
+      max-width: max-content;
+    }
+    margin: 0;
+    .coming-date {
+      width: 100%;
+      justify-content: space-between;
+      .anticon-calendar {
+        margin-right: 10px;
+      }
+    }
+    .instant-tag {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.upload-iconbtn {
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.payout-listing {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 30px;
+  li {
+    color: #fff;
+    text-align: left;
+    margin-bottom: 15px;
+    .ant-badge {
+      margin-right: 10px;
+    }
+  }
+}
+.payout-btn-wrap {
+  width: 100%;
+  text-align: left;
+  margin-top: 25px;
+  .ant-btn-link {
+    color: #ffb100;
+  }
+}
+
+.payout-modal {
+  ul {
+    padding-left: 15px;
+  }
+}
+
+.gm-page-listing {
+  text-align: left;
+  min-width: 150px;
+  .card-heading {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+    margin-bottom: 0;
+  }
+  .team-list {
+    margin-top: 10px;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+    li + li {
+      margin-top: 10px;
+    }
+  }
+}
+
+.find-gm-card {
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    .text {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  p {
+    color: #92a4b3;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+    margin: 0;
+  }
+  & + .find-gm-card {
+    margin-top: 15px;
+  }
+}
+
+.balance-wrap {
+  .availble-text {
+    text-align: left;
+    font-size: 0.875rem;
+    color: #fff;
+  }
+}
+
+.balance-payout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  button {
+    color: #0000005e !important;
+    &:disabled {
+      background-color: gray !important;
+    }
+  }
+}
+
+.balance-table {
+  th,
+  td {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+}
+
+.stripe-form {
+  display: flex;
+  padding: 100px 45px;
+  min-height: calc(100vh - 423px);
+  form,
+  .info-detail {
+    flex: 1;
+  }
+  .info-detail {
+    color: #000;
+  }
+  .p-GridCell--md6 {
+    width: 100% !important;
+  }
+}
